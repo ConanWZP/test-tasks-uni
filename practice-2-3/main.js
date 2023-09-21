@@ -7,8 +7,10 @@ const array = []
 
 document.querySelector('#app').innerHTML = `
   <div>
-    <input id="searchValue" />
+    
     <button id="fetch">Загрузить данные</button>
+    <div id="table-and-search" class="hidden">
+    <input id="searchValue" placeholder="Введите заголовок или описание" class="input" />
     <table class='table'>
                         <thead class='thead'>
                             <tr class='tr'>
@@ -24,12 +26,15 @@ document.querySelector('#app').innerHTML = `
                         
                        
                     </table>
+</div>
+    
   </div>
 `
 
 //setupCounter(document.querySelector('#counter'))
 
 const fetchButton = document.getElementById('fetch')
+const tableSearch = document.getElementById('table-and-search')
 
 const dataArray = []
 
@@ -41,9 +46,8 @@ if (fetchButton) {
                 console.log(json)
                 dataArray.push(...json)
                 render(dataArray)
+                tableSearch.classList.remove('hidden')
             })
-
-
     })
 }
 
