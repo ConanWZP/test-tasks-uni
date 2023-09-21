@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+@font-face {
+  font-family: 'Lato';
+  src: url("./fonts/lato-semibold-webfont.woff2") format('woff2'),
+  url("./fonts/lato-semibold-webfont.woff") format('woff');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.modal-container {
+  width: 754px;
+  border-radius: 12px;
+  background-color: white;
+  padding: 50px 100px;
+  font-family: 'PT Sans', sans-serif;
+
+  @media (max-width: 790px) {
+    padding: 10px 20px;
+  }
+
+}
+
+.modal-title {
+  color: #0C1014;
+  font-size: 28px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  line-height: 34px;
+  word-wrap: break-word;
+  margin-bottom: 35px;
+}
+
+.modal-main__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-main__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+
+  @media (max-width: 640px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+.modal-main__left {
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 640px) {
+    width: 100%;
+  }
+}
+
+.modal-main__input-wrapper {
+  padding: 8px 16px;
+  border: 1px #D6DADE solid;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 32px;
+  width: 362px;
+  border-radius: 2px;
+  @media (max-width: 640px) {
+    width: 100% !important;
+  }
+
+}
+
+.modal-main__sign {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  word-wrap: break-word;
+  span:nth-child(1) {
+    color: #D90000;
+  }
+  span:nth-child(2) {
+    color: #6A6E72;
+  }
+}
+
+
+.modal-main__input {
+  width: 100%;
+  color: #0C1014;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+
+.modal-main__right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.modal-main__center {
+
+}
+
+.modal-select {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
+}
+
+
+.modal-main__large {
+  width: 100%;
+  position: relative;
+  padding: 16px;
+  img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+
+    // pointer-events: none;
+  }
+}
+
+.modal-main__select {
+  padding: 8px 16px !important;
+}
+
+.modal-send {
+  color: white;
+  font-size: 16px;
+  font-family: "Lato";
+  font-weight: 600;
+  line-height: 18px;
+  word-wrap: break-word;
+  background-color: #E5266E;
+  border: none;
+  border-radius: 4px;
+  margin: 20px 0 15px 0;
+  width: 100%;
+  cursor: pointer;
+  padding: 14px 0 16px 0;
+}
+
+.modal-close {
+  color: #0848C0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+  background-color: transparent;
+  width: fit-content;
+  margin: 0 auto;
+  border: none !important;
+  cursor: pointer;
+}
+
+.open-btn {
+  background-color: #4c4d4f;
+  border: none;
+  padding: 3px 8px;
+  border-radius: 4px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.modal-logo {
+  position: relative;
+}
+
+.modal-logo__close {
+  position: absolute;
+  top: 10px;
+  right: 3px;
+}
+
+.modal-logo__file {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+  transform: translateX(-50%) translateY(-40%);
+
+  div {
+    text-decoration: underline;
+
+  }
+
+  input {
+    width: 0;
+    height: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+}
+
+.modal-error {
+  color: red;
+}
+
+.modal-success {
+  color: green;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  -webkit-text-fill-color: #0C1014;;
+  -webkit-box-shadow: transparent;
+  transition: background-color 5000s ease-in-out 0s;
+}
