@@ -1,7 +1,15 @@
 import './style.css'
 import './app.scss'
 import elips from './assets/Ellipse.svg'
-
+import global from './assets/global.svg'
+import group from './assets/Group.svg'
+import group2 from './assets/Group2.svg'
+import fc from './assets/Icon.svg'
+import inst from './assets/Inst.svg'
+import yt from './assets/yt.svg'
+import vk from './assets/vk.svg'
+import ok from './assets/ok.svg'
+import vector from './assets/vector.svg'
 
 
 
@@ -33,9 +41,9 @@ document.querySelector('#app').innerHTML = `
                         <div class="modal-main__sign"><span>✱</span><span>Логотип (jpeg, png)</span></div>
                         <div class="modal-logo">
                              <img src=${elips} />
-                             <img class="modal-logo__close" src="./public/Group%202394.svg" />
+                             <img class="modal-logo__close" src=${group2} />
                              <div class="modal-logo__file">
-                                <img src="./assets/Vector%20(4).svg" />
+                                <img src=${vector} />
                                 <div>Выберите файл</div>
                                 <input id="file" type="file" name="file" accept='image/*' />
                             </div>
@@ -51,31 +59,31 @@ document.querySelector('#app').innerHTML = `
                                   <option value="eco">Экология</option>
                                   <option value="math">Математика</option>
                             </select>
-                            <img id="select" src="./assets/Group.svg" />
+                            <img id="select" src=${group} />
                     </div>
                     <div class="modal-main__input-wrapper modal-main__large">
                             <input class="modal-main__input"  />
-                            <img id="select" src="./assets/Group.svg" />
+                            <img id="select" src=${global} />
                     </div>
                     <div class="modal-main__input-wrapper modal-main__large">
                             <input class="modal-main__input"  />
-                            <img id="select" src="./assets/global%201.svg" />
+                            <img id="select" src=${vk} />
                     </div>
                     <div class="modal-main__input-wrapper modal-main__large">
                             <input class="modal-main__input"  />
-                            <img id="select" src="./assets/vk%201.svg" />
+                            <img id="select" src=${ok} />
                     </div>
                     <div class="modal-main__input-wrapper modal-main__large">
                             <input class="modal-main__input"  />
-                            <img id="select" src="./assets/Icon.svg" />
+                            <img id="select" src=${fc} />
                     </div>
                     <div class="modal-main__input-wrapper modal-main__large">
                             <input class="modal-main__input" />
-                            <img id="select" src="./assets/Instagram_Color_icon-icons.com_71811%201.svg" />
+                            <img id="select" src=${inst} />
                     </div>
                     <div class="modal-main__input-wrapper modal-main__large">
                             <input class="modal-main__input"  />
-                            <img id="select" src="./assets/youtube%202.svg" />
+                            <img id="select" src=${yt} />
                     </div>
                     <div class="modal-main__input-wrapper modal-main__large modal-main__select">
                             <div class="modal-main__sign"><span></span><span>Руководитель</span></div>
