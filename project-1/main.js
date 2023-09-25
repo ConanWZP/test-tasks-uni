@@ -1,5 +1,6 @@
 import './style.css'
 import './app.scss'
+import elips from './assets/Ellipse.svg'
 
 
 
@@ -31,7 +32,7 @@ document.querySelector('#app').innerHTML = `
                     <div class="modal-main__right">
                         <div class="modal-main__sign"><span>✱</span><span>Логотип (jpeg, png)</span></div>
                         <div class="modal-logo">
-                             <img src="./public/Ellipse%2044.svg" />
+                             <img src=${elips} />
                              <img class="modal-logo__close" src="./public/Group%202394.svg" />
                              <div class="modal-logo__file">
                                 <img src="./assets/Vector%20(4).svg" />
