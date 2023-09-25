@@ -31,8 +31,8 @@ document.querySelector('#app').innerHTML = `
                     <div class="modal-main__right">
                         <div class="modal-main__sign"><span>✱</span><span>Логотип (jpeg, png)</span></div>
                         <div class="modal-logo">
-                             <img src="./assets/Ellipse%2044.svg" />
-                             <img class="modal-logo__close" src="./assets/Group%202394.svg" />
+                             <img src="./public/Ellipse%2044.svg" />
+                             <img class="modal-logo__close" src="./public/Group%202394.svg" />
                              <div class="modal-logo__file">
                                 <img src="./assets/Vector%20(4).svg" />
                                 <div>Выберите файл</div>
